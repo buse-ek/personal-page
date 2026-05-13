@@ -1,11 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const slides = document.querySelector('.slides');
-const images = slides.querySelectorAll('img');
-const totalImages = images.length;
-let index = 0;
-let slideIndex = 0;
-showSlides();
+let slideIndices = {};
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -37,18 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function showSlides() {
-    const slides = document.querySelector('.slides');
-    const slidesArray = Array.from(slides.getElementsByClassName('slide'));
-    if (slideIndex >= slidesArray.length) {
-        slideIndex = 0;
-    } else if (slideIndex < 0) {
-        slideIndex = slidesArray.length - 1;
-    }
-    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+function showSlides(slider, index) {
+    const slidesEl = slider.querySelector('.slides');
+    const slidesArray = Array.from(slidesEl.getElementsByClassName('slide'));
+    if (index >= slidesArray.length) index = 0;
+    else if (index < 0) index = slidesArray.length - 1;
+    slidesEl.style.transform = `translateX(-${index * 100}%)`;
+    return index;
 }
 
-function moveSlide(n) {
-    slideIndex += n;
-    showSlides();
+function moveSlide(n, btn) {
+    const slider = btn.closest('.image-slider');
+    const id = Array.from(document.querySelectorAll('.image-slider')).indexOf(slider);
+    if (slideIndices[id] === undefined) slideIndices[id] = 0;
+    slideIndices[id] += n;
+    slideIndices[id] = showSlides(slider, slideIndices[id]);
 }

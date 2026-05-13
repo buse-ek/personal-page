@@ -40,10 +40,21 @@ body{
     padding: 0;
 }
 
+.banner-analyst{
+    background-image: url('../src/images/uc_edited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh; /*going to be 100% of the viewport height, so full page*/
+    margin: 0;
+    padding: 0;
+}
+
 .hero-content {
     margin-left: 80px;
     margin-bottom: 200px;
     margin-top: 100px;
+    margin-right: 80px;
     color: white;
 }
 
@@ -323,12 +334,10 @@ a:hover{
 
 .button:hover{ /*while hovering over*/
     background-color: rgb(0, 150, 200);
-  
 }
 
 .button:active{ /* on click*/
-    background-color: rgb(0, 110, 147);
-    
+    background-color: rgb(0, 110, 147);  
 }
 
 .report-buttons{
@@ -355,7 +364,6 @@ a:hover{
 .socials{
     padding-bottom: 200px;
     padding-top: 125px;
-    
 }
 
 .social-button{
@@ -365,14 +373,11 @@ a:hover{
 .logo{
     height: 80px;
     margin: 10px;
-    
 }
 
 .social{
     margin: 20px;
     padding: 20px;
-   
- 
 }
 
 .about{
@@ -384,42 +389,30 @@ a:hover{
 }
 
 .intro{
-    
-
     padding: 50px;
     height: auto;
     margin-left: 150px;
     margin-right:150px;
-
-  
 }
 
 .employer{
-    /* margin-left: 200px; */
-    /* margin-right:200px; */
-    /* flex-wrap:wrap; */
     display: flex;
     justify-content: flex-start;
-    padding: 50px;
-    
-    height: auto;
-  
+    padding: 50px;   
+    height: auto;  
 }
 
 .description{
     display: flex;
     justify-content: flex-start;
-    padding: 50px;
-    
+    padding: 50px;    
     height: auto;
 }
 
-.focus{
- 
+.focus{ 
     display: flex;
     justify-content: flex-start;
-    padding: 50px;
-    
+    padding: 50px;  
     height: auto;
 }
 
@@ -427,11 +420,7 @@ a:hover{
 .goals{
     display: flex;
     justify-content: flex-start;
-
     padding: 50px;
-    
-    
-    /* height: auto; */
 }
 /* Ensure you have a grid layout for the goals */
 .goals-container {
@@ -441,8 +430,6 @@ a:hover{
 
     padding-left: 30px;
     margin: 0 auto;
-    
-
   }
   
   .goal-item {
@@ -456,7 +443,6 @@ a:hover{
     margin-bottom: 10px;
     min-width: 300px;
     min-height: 200px;
-
   }
   
   .goal-item:hover {
@@ -471,19 +457,8 @@ a:hover{
   .goal-item.active .goal-description {
     display: block; /* Show paragraph when active */
   }
-  
-/* 
-.goals .information {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-} */
-
 
 .conclusion{
-    
- 
     padding: 50px;
     height: 500px;
     margin-top: 100px;
@@ -503,7 +478,6 @@ a:hover{
 
 .skills{
     width: 100vh;
-    
 }
 
 .skill-list{
@@ -526,7 +500,6 @@ a:hover{
 }
 
 .projects{
-    
     /*height: 1500px;*/
     background-color: rgb( 0, 214, 200);
     padding: 1px;
@@ -542,9 +515,6 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
-
-    
-   
 }
 
 .hamburger{
@@ -694,6 +664,23 @@ a:hover{
   border-radius: 8px; 
   }
 
+  .form-image img {
+    /* margin-top:150px; */
+    max-width: 400px; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 20px; /* Adds space between text and image */
+    border: 2px solid #15060a; /* Dark sage green border */
+    border-radius: 8px; 
+  }
+
+  .form-image figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 6px;
+  }
+
+
   .video {
     margin-left: 100px;
     margin-top: 40px;
@@ -705,19 +692,39 @@ a:hover{
     max-width: 600px; /* Adjust as needed */
     margin: 0 auto;
     overflow: hidden;
- 
-
 }
 
+.image-slider.below {
+    
+    position: relative;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 2px;
+    overflow: hidden;
+    
+}
+
+
 .slides {
-   
     margin-top:150px;
     display: flex;
     transition: transform 0.5s ease;
 }
 
+.slides.below {
+    margin-top: 40px;
+    display: flex;
+    transition: transform 0.5s ease;
+
+    
+}
+
+.sliders-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .slide {
-    position: relative;
     min-width: 100%;
 }
 .slides img {
@@ -752,11 +759,8 @@ button:hover {
 }
 
 .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     padding: 10px;
@@ -775,11 +779,35 @@ button:hover {
 
 /*F24 WTR*/
 .responsibilities{
-    
     padding: 50px;
     height: auto;
     margin-left: 150px;
     margin-right:150px;
+}
+
+.responsibilities-photo{
+    padding: 50px;
+    height: auto;
+    margin-left: 150px;
+    margin-right:150px;
+    /* justify-content: flex-start;   */
+    
+    /* display: flex;
+    justify-content: flex-start;
+    padding: 50px;   
+    height: auto;   */
+}
+
+.responsibilities .information {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-image-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .mathstat-launch{
