@@ -187,6 +187,7 @@ nav {
 .nav-menu li {
     list-style: none; /* Remove default list styling */
     padding: 0 10px; /* Adjust padding for spacing */
+    font-size: 20px;
 }
 
 /* Optional: Add responsive behavior */
