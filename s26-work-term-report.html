@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="src/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+        
+        <title>Work Term Report 4 (S26)</title>
+
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <section class="banner-analyst">
+            <section class="header">
+            <nav class="navbar">
+                <img class="logo" src="src/images/temp-logo.png" alt="Buse Ekmen Logo"/>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a a class="menu" href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a a class="menu" href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a a class="menu" href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a a class="menu" href="#contact" class="nav-link">Contact</a></li>
+                     <!-- New link to another page -->
+                    <li class="nav-item"><a a class="menu" href="wtr.html" class="nav-link">Work Term Reports</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            </section>
+            
+            <div class="hero-area">
+                <div class="hero-content">
+                        <h1>Work Term Report (Summer 2026)</h1>
+                        <h4>Junior Analyst - DevOps Change Management</h4>
+                </div>
+            </section>
+            <section class="intro" id="intro">
+                
+                    <h2 style="color:#c20531">A New Experience</h2>
+                    <p>Following my previous co-op term as a Junior Analyst with CCS Enterprise Applications, I continued to build on the technical foundation 
+                        I developed through my initial work with .NET and enterprise application development. While my earlier term focused heavily on learning new 
+                        technologies and contributing to the early stages of the Flex Credit Allocation rewrite, this term involved taking ownership of larger 
+                        projects, making architectural decisions, and delivering solutions that moved beyond proof-of-concept work into implementation and deployment.            
+                    </p>
+            </section>
+
+            <section class="responsibilities" id="employer">
+                    <h2 style="color:#c20531">HR Systems Work</h2>
+                    <h3>Flex Allocation Rewrite</h3>
+                    <div class="text-with-image">
+                       <div class="text-column">
+                        <p>The Flex Credit Allocation rewrite remained one of my primary responsibilities throughout the term. </p><br>
+                        <br>During my previous work term, I focused on learning .NET, designing a modern replacement for the application's user interface, 
+                            and building the initial Blazor Server frontend. This term expanded on that work by moving deeper into application architecture 
+                            and data integration planning.<br>
+                        I continued developing the modern Blazor Server version of the application while maintaining compatibility with the existing business 
+                            rules and workflows used by HR administrators. Rather than simply recreating the legacy system, I evaluated how modern .NET practices 
+                            could be introduced in a low-risk manner that would support future maintenance and migration efforts. </p><br>
+                        <br>Key areas of work included: 
+                        <ul>
+                            <li>Expanding and refining administrative functionality.</li>
+                            <li>Designing approaches for managing allocation data and employee information. </li>
+                            <li>Implementing and validating business rules carried forward from the legacy application. </li>
+                            <li>Creating data-access architecture that would allow the application to transition from mock data to real data sources. </li>
+                            <li>Integrating Entity Framework Core in a controlled, database-safe manner. </li>
+                            <li>Developing read-only access patterns to support application functionality while preventing unintended database modifications. </li>
+                            <li>Working through authentication, authorization, and future backend integration considerations. </li>
+                            <li>Creating documentation, demonstrations, and design artifacts to support stakeholder communication.</li>
+                        </ul>
+                        <p>A major focus was ensuring that development decisions supported long-term modernization goals while remaining practical for a large enterprise 
+                            application with an existing user base and operational requirements. </p>
+                        </div>
+                        <div class="image-column">
+                            <figure class="form-image">
+                                <img src="src/images/dot-net-logo.webp" alt="Microsoft .NET and C# logo"/>
+                            </figure>
+                            <figure class="form-image">
+                                <img src="src/images/blazor-logo.avif" alt="Microsoft Blazor logo."/>
+                            </figure>
+                        </div>
+                        </div>
+
+                        <h3>Stakeholder Collaboration</h3>
+                        <p>Throughout the project I worked closely with HR stakeholders, supervisors, and technical staff to gather requirements, present progress, 
+                            receive feedback, and adjust implementation plans. This included preparing demonstrations, discussing future functionality, and balancing
+                            technical considerations with user needs. </p><br>
+                        <p>The project strengthened my ability to translate business requirements into technical solutions while keeping maintainability and future development in mind. </p>
+            </section>
+            
+            <section class="responsibilities-photo" id="responsibilities">
+                <h2 style="color:#c20531">Finance Systems Work</h2>
+                <h3>ECS Archive Project</h3>
+                <div class="text-image-row">
+                    <div class="text-with-image">
+                        <div class="text-column">
+                            <p>A significant project this term involved the migration and archival of financial data from an Oracle-based ECS system into Microsoft SQL Server. 
+                            <br>
+                            <p>The project required transferring two related datasets containing expense claim information while preserving data integrity and maintaining relationships between records. 
+                            <br>My responsibilities included: 
+                            <ul>
+                                <li>Investigating source and destination database structures. </li>
+                                <li>Developing and refining the migration approach. </li>
+                                <li>Creating SQL Server schema definitions and migration scripts. </li>
+                                <li>Documenting migration procedures. </li>
+                                <li>Validating data quality throughout the migration process. </li>
+                                <li>Testing and refining the process across multiple environments. </li>
+                            </ul>
+
+                            <p>During early testing, I identified potential issues related to direct data imports and designed a staging-table approach that allowed data 
+                                to be imported as text prior to conversion into final SQL Server data types. This significantly reduced the risk of incorrect data conversions 
+                                and provided additional opportunities for validation before loading production data. </p><br>
+                            <p>The migration process ultimately included: </p>
+                            <ul>
+                                <li>Oracle data exports</li>
+                                <li>SQL Server staging imports</li>
+                                <li>Validation checks</li>
+                                <li>Final data loads</li>
+                                <li>Index creation</li>
+                                <li>Foreign key implementation </li>
+                                <li>Post-migration verification </li>
+                            </ul>
+                            <p>After the process was successfully validated in Development and Test environments, the same approach was prepared and executed for Production. 
+                                This project provided valuable experience working with large datasets, database migration planning, SQL Server administration tasks, and data quality validation in an enterprise environment. 
+                            </p>
+                        </div>
+                        <div class="image-column">
+                            <figure class="form-image">
+                                <img src="src/images/sql-server-logo.jpeg" alt="SQL Server Management Studio logo."/>
+                            </figure>
+                            <figure class="form-image">
+                                <img src="src/images/oracle-server-logo.png" alt="Oracle Server logo."/>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="responsibilities-photo" id="responsibilities">
+            <h3>Speedata Publisher Migration </h3>
+                <div class="text-image-row">
+                <div class="information">                    
+                    <p>Building on my previous work with Speedata Publisher, I continued supporting the organization's migration from an older version of the software to a modern release. 
+                        <br>My earlier work focused on report compatibility analysis and template updates. As the migration progressed, I expanded my understanding of the platform and gained 
+                        further experience working with publishing templates, migration challenges, and version-specific behaviour. 
+                        <br>The project reinforced the importance of documentation, testing, and attention to detail when upgrading systems that support important operational processes.       
+                    </p>
+                </div>
+            </div>    
+            </section>
+            <section class="responsibilities" id="responsibilities">
+                    <h3>Technical Growth </h3>
+                    <p>This term marked a transition from primarily learning technologies to applying them independently. 
+                        Areas where my knowledge grew significantly included: 
+                    <ul>
+                        <li>
+                            Modern .NET application development 
+                        </li>
+                        <li>Blazor Server </li>
+                        <li>Entity Framework Core </li>
+                        <li>Database architecture </li>
+                        <li>SQL Server </li>
+                        <li>Oracle-to-SQL Server migration strategies </li>
+                        <li>Enterprise application modernization </li>
+                        <li>System integration planning </li>
+                        <li>Technical documentation </li>
+                        <li>Software architecture decision-making </li>
+                    </ul>
+                    <p>I became increasingly comfortable working with unfamiliar technologies, evaluating multiple implementation approaches, and selecting solutions based on long-term maintainability rather than solely immediate functionality. </p>
+                    
+            </section>
+            <section class="responsibilities" id="responsibilities">
+                    <h3>Professional Growth </h3>
+                    <p>One of the biggest changes from previous work terms was the level of ownership I was given. 
+                        Rather than working exclusively on assigned development tasks, I frequently found myself: 
+                    <ul>
+                        <li>
+                            Investigating technical problems independently. 
+                        </li>
+                        <li>Researching potential solutions. </li>
+                        <li>Presenting recommendations.  </li>
+                        <li>Creating implementation plans. </li>
+                        <li>Documenting processes for future teams. </li>
+                        <li>Supporting projects through deployment and validation phases. </li>
+                    </ul>
+                    <p>I gained confidence in making technical decisions, communicating complex ideas to both technical and non-technical audiences, and managing projects that spanned multiple months and departments. </p>
+                    
+            </section>
+
+            <div>
+                <img class="section-divider" src="src/images/Screenshot 2024-09-11 at 8.45.11 PM.png" alt="Divider" />
+            </div>
+            <section class="responsibilities" id="responsibilities">
+                <h2 style="color:#c20531">Reflection</h2>
+                <p>This term represented a significant step forward in my development as a software developer and analyst. The work 
+                    moved beyond learning individual technologies and toward understanding how 
+                    enterprise systems are planned, modernized, migrated, and maintained over time. 
+
+                    <br>Through the Flex Credit Allocation rewrite, ECS Archive migration, and Speedata Publisher migration efforts, I gained practical experience across application development, database systems, software architecture, stakeholder collaboration, and technical documentation. More importantly, I developed greater confidence in my ability to independently tackle unfamiliar challenges, design sustainable solutions, and contribute meaningfully to large institutional projects. 
+                </p>
+            </section>
+            
+        <footer>
+            <div class="info">
+                <h4>Buse Ekmen</h4>
+                <p>Dynamic Computer Science student blending code and creativity in software development. Passionate about crafting innovative solutions that bridge technology and art, eager to contribute my unique perspective to the field.</p>
+            </div>
+            <div class="footer-socials">
+                <h4>Socials</h4>
+                <div class="icons">
+                    <div><a href="mailto: melissa.ekmen@gmail.com" class="social"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M13.718 10.528c0 .792-.268 1.829-.684 2.642-1.009 1.98-3.063 1.967-3.063-.14 0-.786.27-1.799.687-2.58 1.021-1.925 3.06-1.624 3.06.078zm10.282 1.472c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-1.194c0-3.246-2.631-5.601-6.256-5.601-4.967 0-7.744 3.149-7.744 7.073 0 3.672 2.467 6.517 7.024 6.517 2.52 0 4.124-.726 5.122-1.288l-.687-.991c-1.022.593-2.251 1.136-4.256 1.136-3.429 0-5.733-2.199-5.733-5.473 0-5.714 6.401-6.758 9.214-5.071 2.624 1.642 2.524 5.578.582 7.083-1.034.826-2.199.799-1.821-.756 0 0 1.212-4.489 1.354-4.975h-1.364l-.271.952c-.278-.785-.943-1.295-1.911-1.295-2.018 0-3.722 2.19-3.722 4.783 0 1.73.913 2.804 2.38 2.804 1.283 0 1.95-.726 2.364-1.373-.3 2.898 5.725 1.557 5.725-3.525z"/></svg></a></div>
+                    <div><a href="https://github.com/buse-ek" class="social"><svg width="50" height="50"xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></div>
+                    <div><a href="https://www.linkedin.com/in/m-buse-ekmen-2b56601ba/" class="social"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"  fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="src/app.js"></script>
+        
+    </body>
+</html>
