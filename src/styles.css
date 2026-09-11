@@ -823,8 +823,19 @@ button:hover {
     margin-top:20px;
 }
 
+.text-with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
 
+.text-column {
+    flex: 1;
+}
 
-
-
-
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+}
